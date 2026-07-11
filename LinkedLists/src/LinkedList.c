@@ -5,7 +5,9 @@
 node* createNode(int value) {
 	node* result;
 	result = calloc(1,sizeof(node));
+
 	if (result == NULL) return NULL;
+	
 	result->value = value;
 	result->next = NULL;
 	return result;
